@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace MyLib
 {
-    public class Class1
+    class Class1
     {
+
     }
 }
