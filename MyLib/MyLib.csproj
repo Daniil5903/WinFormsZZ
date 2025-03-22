@@ -45,6 +45,7 @@
     <Compile Include="PhysicalFormula.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FormulaManager.cs" />
+    <Compile Include="UniformlyAcceleratedMotion.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
