@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsZimneeZ", "WinForms
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyLib", "MyLib\MyLib.csproj", "{19EF11A1-FDB4-4DEA-A0F8-0B49750ECE37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{1EF179DA-36A5-4807-A78B-6A3F403D71B7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhysicsCalculator.Tests", "PhysicsCalculator.Tests\PhysicsCalculator.Tests.csproj", "{67A13C4A-0D2F-4DC4-9C6A-8D098C826013}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{19EF11A1-FDB4-4DEA-A0F8-0B49750ECE37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19EF11A1-FDB4-4DEA-A0F8-0B49750ECE37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19EF11A1-FDB4-4DEA-A0F8-0B49750ECE37}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1EF179DA-36A5-4807-A78B-6A3F403D71B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1EF179DA-36A5-4807-A78B-6A3F403D71B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1EF179DA-36A5-4807-A78B-6A3F403D71B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1EF179DA-36A5-4807-A78B-6A3F403D71B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67A13C4A-0D2F-4DC4-9C6A-8D098C826013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67A13C4A-0D2F-4DC4-9C6A-8D098C826013}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67A13C4A-0D2F-4DC4-9C6A-8D098C826013}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67A13C4A-0D2F-4DC4-9C6A-8D098C826013}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
