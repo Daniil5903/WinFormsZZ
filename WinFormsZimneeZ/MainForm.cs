@@ -11,9 +11,9 @@ using MyLib;
 
 namespace WinFormsZimneeZ
 {
-    public partial class Form1: Form
+    public partial class MainForm: Form
     {
-        public Form1()
+        public MainForm()
         {
             InitializeComponent();
             comboBoxFormulas.Items.Add("Равноускоренное движение");
@@ -23,7 +23,46 @@ namespace WinFormsZimneeZ
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // Основная категория
+            TreeNode molecularNode = new TreeNode("Молекулярно-кинетическое движение");
 
+            // Подкатегория для Молекулярно-кинетического движения
+            TreeNode mechanicalNode = new TreeNode("Механическое движение");
+
+            // Подкатегория для Механического движения
+            TreeNode uniformAccelerationNode = new TreeNode("Равноускоренное движение");
+
+            // Добавляем основные категории в TreeView
+            treeViewFormulas.Nodes.Add(molecularNode);
+
+            // Добавляем подкатегории в механическое движение
+            molecularNode.Nodes.Add(mechanicalNode);
+
+            // 
+            mechanicalNode.Nodes.Add(uniformAccelerationNode);
+
+            // Разворачиваем дерево
+            treeViewFormulas.ExpandAll();
+        }
+
+        private void treeViewFormulas_AfterSelect(object sender, TreeViewEventArgs e)
+        {
+            // Очищаем поле перед обновлением
+            lblFormula.Text = "";
+
+            // Определяем, какая формула выбрана
+            switch (e.Node.Text)
+            {
+                case "Равноускоренное движение":
+                    lblFormula.Text = "s = v₀ * t + (1/2) * a * t²";
+                    break;
+                case "Другая формула":
+                    lblFormula.Text = "Формула для другой категории";
+                    break;
+                default:
+                    lblFormula.Text = "Выберите формулу для отображения";
+                    break;
+            }
         }
 
         private void btnCalculate_Click(object sender, EventArgs e)
